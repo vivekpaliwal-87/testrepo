@@ -2,7 +2,7 @@ pipeline {
   agent any
   stages {
     
-    stage("git")
+    stage("Checkout Code")
     {
       steps
       {
@@ -10,6 +10,12 @@ pipeline {
         url: 'https://github.com/vivekpaliwal-87/testrepo.git'
       }
     }
+    
+    stage('Build Code') {
+            steps {
+                sh 'mvn -B -DskipTests clean package'
+            }
+        }
     
 
   }
