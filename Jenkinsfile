@@ -6,7 +6,8 @@ pipeline {
     {
       steps
       {
-        checkout : scm
+        git branch: 'main',      
+        url: 'ssh://git@github.com/vivekpaliwal-87/testrepo.git'
       }
     }
     
