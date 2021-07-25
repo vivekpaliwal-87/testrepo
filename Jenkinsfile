@@ -13,7 +13,7 @@ pipeline {
     
     stage('Build Code') {
             steps {
-                mvn clean package
+                bat mvn clean package
             }
         }
     
