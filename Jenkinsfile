@@ -2,11 +2,11 @@ pipeline {
   agent any
   stages {
     
-    stage("git fetch code")
+    stage("git")
     {
       steps
       {
-        git url: 'https://github.com/vivekpaliwal-87/testrepo.git'
+        checkout : scm
       }
     }
     
