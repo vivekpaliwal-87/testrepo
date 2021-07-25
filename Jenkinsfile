@@ -7,7 +7,7 @@ pipeline {
       steps
       {
         git branch: 'main',      
-        url: 'ssh://git@github.com/vivekpaliwal-87/testrepo.git'
+        url: 'https://github.com/vivekpaliwal-87/testrepo.git'
       }
     }
     
